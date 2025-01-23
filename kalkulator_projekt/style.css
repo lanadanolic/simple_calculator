@@ -1,0 +1,81 @@
+/* Center the entire body content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background for better contrast */
+    margin: 0;
+}
+
+/* Style for the calculator container */
+#calculator {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #2C2C2C; /* Darker background for the calculator */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for better depth */
+    width: 380px; /* Width of the calculator */
+    max-width: 380px;
+}
+
+/* Style for the display area */
+#display {
+    background-color: #1C1C1C; /* Dark background for the display */
+    color: white;
+    text-align: right;
+    font-size: 60px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between display and buttons */
+}
+
+/* Grid for buttons layout */
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Style for the buttons */
+#buttons button {
+    background-color: #505050;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition effects */
+}
+
+/* Hover effect on buttons */
+#buttons button:hover {
+    background-color: #FF9500; /* Hover effect color */
+    opacity: 0.8;
+}
+
+/* Shrink the button slightly on click */
+#buttons button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+/* Special styles for operator buttons */
+#buttons button.operator {
+    background-color: #FF9500;
+}
+
+/* Special style for the "=" button */
+#buttons button.equal {
+    background-color: #4CAF50; /* Green for equal button */
+}
+
+/* Additional styles for AC, +/- and % buttons */
+#buttons button.special {
+    background-color: #FF9500; /* Same color for AC, +/- and % */
+}
